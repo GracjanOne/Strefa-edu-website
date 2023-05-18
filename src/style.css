@@ -4,6 +4,12 @@
     font-weight: normal;
     src: local(MYRIADPRO-BOLDCOND), url('MYRIADPRO-BOLDCOND.woff') format('woff');
   }
+  @font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local(MYRIADPRO-COND), url('MYRIADPRO-COND.woff') format('woff');
+    }
   
   html {
     font-size: 20px;
@@ -30,7 +36,6 @@
   #navbar li {
     list-style: none;
     display: flex;
-    float: left;
     color: white;
     font-family: 'Myriad Pro Bold Condensed';
     font-size: 1vw;
@@ -44,6 +49,7 @@
     color: white;
     background-color: #3B378C;
     border-radius: 35px;
+    font-family: 'Myriad Pro Condensed';
   }
   
   #header-container h1 {
@@ -66,6 +72,47 @@
   nav {
     position: relative;
   }
-  
- 
-  
+ /** #line
+  {
+    height: 5px;
+    width: 14%;
+    background-color: #3B378C;
+    left: 2.5%;
+    top: 10px;
+    position: relative;
+    border-radius: 35px;
+  } **/
+
+ #aside-links ul li
+ {
+    list-style: none;
+    margin-top:3% ;
+    
+ }
+ #aside-links ul li img
+ {
+    width: 12%;
+    margin-left: 1.5%;
+    
+
+ }
+ #section-container 
+ {
+    width: 1090px;
+    height: 1227px;
+    position: relative;
+    left: 22%;
+ }
+ #section-container img
+ {
+    position: absolute;
+    top: 1%;
+    height: 100%;
+    width: 100%;
+ }
+#aside-links
+{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+}
