@@ -72,47 +72,50 @@
   nav {
     position: relative;
   }
- /** #line
+  #line
   {
     height: 5px;
     width: 14%;
     background-color: #3B378C;
     left: 2.5%;
-    top: 10px;
+    
     position: relative;
     border-radius: 35px;
-  } **/
+  } 
 
  #aside-links ul li
  {
     list-style: none;
-    margin-top:3% ;
+    margin-top:20% ;
     
  }
  #aside-links ul li img
  {
-    width: 12%;
-    margin-left: 1.5%;
+    width: 70%;
+    left: 8%;
+    position: relative;
     
 
  }
  #section-container 
  {
-    width: 1090px;
-    height: 1227px;
+   
     position: relative;
-    left: 22%;
+    
  }
  #section-container img
  {
-    position: absolute;
-    top: 1%;
-    height: 100%;
-    width: 100%;
+    
+    height: 78%;
+    width: 78%;
  }
 #aside-links
 {
-    position: absolute;
-    top: 45%;
-    left: 3%;
+   
+}
+#middle-container
+{
+  display: grid;
+  grid-template-columns:19% 100% ;
+  
 }
