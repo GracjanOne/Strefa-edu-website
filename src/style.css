@@ -1,121 +1,141 @@
 @font-face {
-    font-family: 'Myriad Pro Bold Condensed';
-    font-style: normal;
-    font-weight: normal;
-    src: local(MYRIADPRO-BOLDCOND), url('MYRIADPRO-BOLDCOND.woff') format('woff');
-  }
-  @font-face {
-    font-family: 'Myriad Pro Condensed';
-    font-style: normal;
-    font-weight: normal;
-    src: local(MYRIADPRO-COND), url('MYRIADPRO-COND.woff') format('woff');
-    }
-  
-  html {
-    font-size: 20px;
-    font-family: 'Myriad Pro Bold Condensed';
-  }
-  
-  #logo {
-    width: 53%;
-    margin-left: 2%;
-  }
-  
-  #navbar {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-    padding: 0.5%;
-    border-radius: 35px;
-    background-color: #3B378C;
-    margin-top: -14.7%;
-    margin-left: 20%;
-    margin-bottom: 2%;
-  }
-  
-  #navbar li {
-    list-style: none;
-    display: flex;
-    color: white;
-    font-family: 'Myriad Pro Bold Condensed';
-    font-size: 1vw;
-  }
-  
-  #header-container h1,
-  #header-container h2 {
-    position: relative;
-    text-align: center;
-    left: 20%;
-    color: white;
-    background-color: #3B378C;
-    border-radius: 35px;
-    font-family: 'Myriad Pro Condensed';
-  }
-  
-  #header-container h1 {
-    font-size: 4vw;
-    width: 70%;
-    margin-bottom: -0.5%;
-    margin-top: -0.1%;
-  }
-  
-  #header-container h2 {
-    font-size: 2.4vw;
-    width: 41%;
-    left: 34%;
-  }
-  
-  #upper-container {
-    padding-top: 1%;
-  }
-  
-  nav {
-    position: relative;
-  }
-  #line
-  {
-    height: 5px;
-    width: 14%;
-    background-color: #3B378C;
-    left: 2.5%;
-    
-    position: relative;
-    border-radius: 35px;
-  } 
-
- #aside-links ul li
- {
-    list-style: none;
-    margin-top:20% ;
-    
- }
- #aside-links ul li img
- {
-    width: 70%;
-    left: 8%;
-    position: relative;
-    
-
- }
- #section-container 
- {
-   
-    position: relative;
-    
- }
- #section-container img
- {
-    
-    height: 78%;
-    width: 78%;
- }
-#aside-links
-{
-   
+  font-family: "Myriad Pro Bold Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local(MYRIADPRO-BOLDCOND), url("MYRIADPRO-BOLDCOND.woff") format("woff");
 }
-#middle-container
-{
-  display: grid;
-  grid-template-columns:19% 100% ;
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local(MYRIADPRO-COND), url("MYRIADPRO-COND.woff") format("woff");
+}
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local(MYRIADPRO-REGULAR), url('MYRIADPRO-REGULAR.woff') format('woff');
+  }
+
+html {
+  font-size: 20px;
+  font-family: "Myriad Pro Bold Condensed";
   
+}
+body
+{
+  margin: 0;
+}
+#logo {
+  width: 53%;
+  margin-left: 2%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  padding: 0.5%;
+  border-radius: 35px;
+  background-color: #3b378c;
+  margin-top: -14.7%;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+
+#navbar li {
+  list-style: none;
+  display: flex;
+  color: white;
+  font-family: "Myriad Pro Bold Condensed";
+  font-size: 1vw;
+}
+
+#header-container h1,
+#header-container h2 {
+  position: relative;
+  text-align: center;
+  left: 20%;
+  color: white;
+  background-color: #3b378c;
+  border-radius: 35px;
+  font-family: "Myriad Pro Condensed";
+}
+
+#header-container h1 {
+  font-size: 4vw;
+  width: 70%;
+  margin-bottom: -0.5%;
+  margin-top: -0.1%;
+}
+
+#header-container h2 {
+  font-size: 2.4vw;
+  width: 41%;
+  left: 34%;
+}
+
+#upper-container {
+  padding-top: 1%;
+}
+
+nav {
+  position: relative;
+}
+#line {
+  height: 5px;
+  width: 14%;
+  background-color: #3b378c;
+  left: 2.5%;
+
+  position: relative;
+  border-radius: 35px;
+}
+
+#aside-links ul li {
+  list-style: none;
+  margin-top: 20%;
+  
+}
+#aside-links ul li img {
+  width: 70%;
+  left: 8%;
+  position: relative;
+}
+
+#section-container {
+  position: relative;
+}
+#section-container img {
+  height: 97%;
+  width: 97%;
+}
+#middle-container {
+  display: grid;
+  grid-template-columns: 19% 81%;
+}
+#footer {
+  width: 100%;
+  height: 100%;
+  background-color: #3b378c;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 2vw;
+}
+#contact-information
+{
+  font-family: 'Myriad Pro Regular';
+  font-size: 1vw;
+}
+#copyright
+{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #322F67;
+  color: white;
+  padding-top:0.5% ;
+  padding-bottom: 0.5%;
+  font-size: 1vw;
 }
