@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" style="scroll-behavior: smooth;">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strefa.edu - Strona główna</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async></script>
   </head>
   <body>
     <div id="upper-container">
@@ -21,7 +22,7 @@
           <li>STREFY</li>
           <li>AKTUALNOŚCI</li>
           <li>O NAS</li>
-          <li>KONTAKT</li>
+          <li><a id="contact-button" href="">KONTAKT</a></li>
         </ul>
       </nav>
       <header>
@@ -30,6 +31,47 @@
           <h2>MAJ 2023</h2>
         </div>
       </header>
+      <div id="contact-window-container" >
+        <div class="contact-window">
+          <form action="" id="form">
+            <span id="contact-title">Skontaktuj się z nami!</span>
+            <button id="closeButton">x</button>
+            <br />
+            <input
+              type="text"
+              class="contact-inputs"
+              required
+              autofocus
+              placeholder="Imię"
+            />
+            <input
+              type="text"
+              class="contact-inputs"
+              required
+              placeholder="Nazwisko"
+            />
+            <br />
+            <input 
+              type="text"
+              class="contact-inputs"
+              id="email-holder"
+              required
+              placeholder="Adres e-mail"
+            />
+            <br />
+            <textarea
+              name=""
+              class="contact-inputs"
+              id="contact-textarea"
+              cols="30"
+              rows="10"
+              placeholder="W czym możemy pomóc?"
+            ></textarea>
+            <br />
+            <input id="submit-button" type="submit" value="Wyślij" />
+          </form>
+        </div>
+      </div>
     </div>
     <div id="middle-container">
       <aside>
@@ -87,7 +129,7 @@
             tel: 75 74 13 364
           </span>
         </div>
-        <div id="copyright">Copyright ©  Gracjan Zalewski</div>
+        <div id="copyright">Copyright © Gracjan Zalewski</div>
       </div>
     </footer>
   </body>
