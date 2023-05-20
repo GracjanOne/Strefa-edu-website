@@ -4,9 +4,12 @@ const cancel_button = document.getElementById("closeButton");
 const close_button = document.getElementById("linkCloseButton");
 const link_window = document.getElementsByClassName("links-window")[0];
 const jawor_link_window = document.getElementsByClassName("jawor-links-window")[0];
+const bolkow_link_window = document.getElementsByClassName("bolkow-links-window")[0];
 const zsip = document.getElementById("zsip-link");
 const jawor = document.getElementById("jawor-link");
+const bolkow = document.getElementById("bolkow-link");
 const jawor_close = document.getElementById("JaworlinkCloseButton");
+const bolkow_close = document.getElementById("BolkowlinkCloseButton")
 contact_button.addEventListener("click", function (event) {
   event.preventDefault();
   contact_form.style.opacity = "1";
@@ -45,5 +48,18 @@ jawor.addEventListener("click", function(event)
 jawor_close.addEventListener("click", function (event) {
   jawor_link_window.style.opacity = "0";
   jawor_link_window.style.visibility = "hidden";
+  document.body.style.overflowY = "scroll";
+});
+bolkow.addEventListener("click", function(event)
+{
+  event.preventDefault();
+  bolkow_link_window.style.opacity = "1";
+  bolkow_link_window.style.visibility = "visible";
+  bolkow_link_window.style.transition = "0.4s";
+  document.body.style.overflowY = "hidden";
+});
+bolkow_close.addEventListener("click", function (event) {
+  bolkow_link_window.style.opacity = "0";
+  bolkow_link_window.style.visibility = "hidden";
   document.body.style.overflowY = "scroll";
 });
