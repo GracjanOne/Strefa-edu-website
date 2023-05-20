@@ -328,3 +328,31 @@ nav {
   font-size: 3vw;
   color: #3b378c;
 }
+.aside-link:hover
+{
+  opacity: 1;
+}
+.aside-link
+{
+  opacity: 0.8;
+}
+aside {
+  position: sticky;
+  top: 0vw;
+  
+  height: 100vh;
+  overflow: auto;
+}
+aside::-webkit-scrollbar {
+  width: 0.5em; /* szerokość paska przewijania */
+  background-color: #F5F5F5; /* kolor tła paska przewijania */
+  height: 30vw;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #888; /* kolor paska przewijania */
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* kolor paska przewijania po najechaniu na niego kursorem */
+}

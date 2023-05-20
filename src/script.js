@@ -26,7 +26,7 @@ cancel_button.addEventListener("click", function (event) {
 close_button.addEventListener("click", function (event) {
   link_window.style.opacity = "0";
   link_window.style.visibility = "hidden";
-  document.body.style.overflowY = "scroll";
+  
 });
 
 zsip.addEventListener("click", function(event)
@@ -35,7 +35,7 @@ zsip.addEventListener("click", function(event)
  link_window.style.opacity = "1";
  link_window.style.visibility = "visible";
  link_window.style.transition = "0.4s";
- document.body.style.overflowY = "hidden";
+ 
 });
 jawor.addEventListener("click", function(event)
 {
@@ -43,12 +43,12 @@ jawor.addEventListener("click", function(event)
   jawor_link_window.style.opacity = "1";
   jawor_link_window.style.visibility = "visible";
   jawor_link_window.style.transition = "0.4s";
-  document.body.style.overflowY = "hidden";
+  
 });
 jawor_close.addEventListener("click", function (event) {
   jawor_link_window.style.opacity = "0";
   jawor_link_window.style.visibility = "hidden";
-  document.body.style.overflowY = "scroll";
+  
 });
 bolkow.addEventListener("click", function(event)
 {
@@ -56,10 +56,10 @@ bolkow.addEventListener("click", function(event)
   bolkow_link_window.style.opacity = "1";
   bolkow_link_window.style.visibility = "visible";
   bolkow_link_window.style.transition = "0.4s";
-  document.body.style.overflowY = "hidden";
+  
 });
 bolkow_close.addEventListener("click", function (event) {
   bolkow_link_window.style.opacity = "0";
   bolkow_link_window.style.visibility = "hidden";
-  document.body.style.overflowY = "scroll";
+  
 });
