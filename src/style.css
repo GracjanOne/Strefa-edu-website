@@ -11,19 +11,17 @@
   src: local(MYRIADPRO-COND), url("MYRIADPRO-COND.woff") format("woff");
 }
 @font-face {
-  font-family: 'Myriad Pro Regular';
+  font-family: "Myriad Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: local(MYRIADPRO-REGULAR), url('MYRIADPRO-REGULAR.woff') format('woff');
-  }
+  src: local(MYRIADPRO-REGULAR), url("MYRIADPRO-REGULAR.woff") format("woff");
+}
 
 html {
   font-size: 20px;
   font-family: "Myriad Pro Bold Condensed";
-  
 }
-body
-{
+body {
   margin: 0;
 }
 #logo {
@@ -95,7 +93,6 @@ nav {
 #aside-links ul li {
   list-style: none;
   margin-top: 20%;
-  
 }
 #aside-links ul li img {
   width: 70%;
@@ -124,18 +121,16 @@ nav {
   color: white;
   font-size: 2vw;
 }
-#contact-information
-{
-  font-family: 'Myriad Pro Regular';
+#contact-information {
+  font-family: "Myriad Pro Regular";
   font-size: 1vw;
 }
-#copyright
-{
+#copyright {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #322F67;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #322f67;
   color: white;
-  padding-top:0.5% ;
+  padding-top: 0.5%;
   padding-bottom: 0.5%;
   font-size: 1vw;
 }
@@ -150,7 +145,7 @@ nav {
 }
 
 .contact-window {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   height: 40vw;
   width: 50vw;
   position: absolute;
@@ -160,11 +155,9 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
-.contact-inputs
-{
+.contact-inputs {
   height: 2vw;
   font-size: 1.5vw;
   margin: 1vw;
@@ -173,19 +166,15 @@ nav {
   border-radius: 30px;
   padding: 1vw;
   border: solid black 1px;
-  
 }
 
-#contact-title
-{
+#contact-title {
   font-size: 3vw;
-  
+
   margin-bottom: 6vw;
   color: #3b378c;
-  
 }
-#closeButton
-{
+#closeButton {
   border: none;
   background: none;
   cursor: pointer;
@@ -193,26 +182,21 @@ nav {
   left: 45vw;
   font-size: 3vw;
   color: #3b378c;
-
 }
-#email-holder
-{
+#email-holder {
   width: 43vw;
 }
-#contact-textarea
-{
+#contact-textarea {
   width: 43vw;
   height: 10vw;
   resize: none;
-  font-family: 'Myriad Pro Regular';
+  font-family: "Myriad Pro Regular";
 }
-#form
-{
+#form {
   width: 100%;
   height: 90%;
 }
-#submit-button
-{
+#submit-button {
   background-color: #3b378c;
   color: white;
   font-family: "Myriad Pro Bold Condensed";
@@ -223,14 +207,69 @@ nav {
   font-size: 1.5vw;
 }
 
-#contact-button:link
-{
+#contact-button:link {
   color: white;
   text-decoration: none;
 }
-#contact-button:visited
-{
+#contact-button:visited {
   color: white;
   text-decoration: none;
 }
-
+.links-window {
+  background-color: #d9d9d9;
+  height: 40vw;
+  width: 50vw;
+  position: absolute;
+  top: 30%;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+}
+.links-window-container
+{
+  display: flex;
+  justify-content: center;
+}
+.fb-link a img
+{
+  position: absolute;
+  left: -2vw;
+  width: 30vw;
+  top: 10vw;
+  border-radius: 35px;
+}
+#links-title
+{
+  position: absolute;
+  top: 2.5vw;
+  font-size: 3vw;
+  color: #3b378c;
+}
+#website
+{
+  position: absolute;
+  left: 27vw;
+  width: 20.5vw;
+  height: 20.5vw;
+  top: 11vw;
+  border-radius: 35px;
+}
+#linkCloseButton {
+  top: 2vw;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  left: 45vw;
+  font-size: 3vw;
+  color: #3b378c;
+}
+.links-window
+{
+  opacity: 0;
+  visibility: hidden;
+  
+}
