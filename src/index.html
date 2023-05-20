@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" style="scroll-behavior: smooth;">
+<html lang="pl" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,6 @@
     <title>Strefa.edu - Strona główna</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" async></script>
-    
   </head>
   <body>
     <div id="upper-container">
@@ -32,7 +31,7 @@
           <h2>MAJ 2023</h2>
         </div>
       </header>
-      <div id="contact-window-container" >
+      <div id="contact-window-container">
         <div class="contact-window">
           <form id="form">
             <span id="contact-title">Skontaktuj się z nami!</span>
@@ -52,7 +51,7 @@
               placeholder="Nazwisko"
             />
             <br />
-            <input 
+            <input
               type="text"
               class="contact-inputs"
               id="email-holder"
@@ -74,16 +73,45 @@
         </div>
       </div>
     </div>
+    <!--Start of ZSIP link window -->
     <div class="links-window-container">
       <div class="links-window">
-        
         <button id="linkCloseButton">x</button>
         <div class="fb-link">
-          <a href="https://www.facebook.com/people/ZSiP-Bolków/100057203150445/?paipv=0&eav=AfYD3fxg34aNLWFDkHWm6oDxlc_4c-jwb8qqwLNx_cuexIB6DM3aHNTa16cnxQ6uhGs&_rdr"><img src="../images/facebook-logo.png" alt="FB-logo"></a>
+          <a
+            href="https://www.facebook.com/people/ZSiP-Bolków/100057203150445/?paipv=0&eav=AfYD3fxg34aNLWFDkHWm6oDxlc_4c-jwb8qqwLNx_cuexIB6DM3aHNTa16cnxQ6uhGs&_rdr"
+            ><img src="../images/facebook-logo.png" alt="FB-logo"
+          /></a>
         </div>
-        <div class="website-link"><a href="http://zsip-bolkow.pl/ZSiP/">
-          <img id="website" src="../images/website logo.png" alt="">
-        </a> </div>
+        <div class="website-link">
+          <a href="http://zsip-bolkow.pl/ZSiP/">
+            <img
+              id="website"
+              src="../images/website logo.png"
+              alt="website logo"
+            />
+          </a>
+        </div>
+        <span id="links-title">GDZIE CHCESZ SIĘ UDAĆ?</span>
+      </div>
+      <!--Start of powiat jaworski link window-->
+
+      <div class="jawor-links-window">
+        <button id="JaworlinkCloseButton">x</button>
+        <div class="fb-link">
+          <a href="https://www.facebook.com/powiat.jaworski.1/?locale=pl_PL"
+            ><img src="../images/facebook-logo.png" alt="FB-logo"
+          /></a>
+        </div>
+        <div class="website-link">
+          <a href="https://www.powiat-jawor.org.pl">
+            <img
+              id="website"
+              src="../images/website logo.png"
+              alt="website logo"
+            />
+          </a>
+        </div>
         <span id="links-title">GDZIE CHCESZ SIĘ UDAĆ?</span>
       </div>
     </div>
@@ -98,15 +126,17 @@
                     class="aside-link"
                     src="../images/ZSIP_aside_photo.png"
                     alt="ZSIP Bolków link"
-                   
                   />
                 </a>
               </li>
               <li class="aside-link">
-                <img
-                  src="../images/powiat_jaworski_aside.jpg"
-                  alt="Powiat Jaworski link"
-                />
+                <a id="jawor-link" href="">
+                  <img
+                  
+                    src="../images/powiat_jaworski_aside.jpg"
+                    alt="Powiat Jaworski link"
+                  />
+                </a>
               </li>
               <li class="aside-link">
                 <img

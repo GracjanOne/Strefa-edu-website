@@ -23,6 +23,7 @@ html {
 }
 body {
   margin: 0;
+  
 }
 #logo {
   width: 53%;
@@ -219,8 +220,8 @@ nav {
   background-color: #d9d9d9;
   height: 40vw;
   width: 50vw;
-  position: absolute;
-  top: 30%;
+  position: fixed;
+  top: 10%;
   border-radius: 48px;
   display: flex;
   justify-content: center;
@@ -272,4 +273,31 @@ nav {
   opacity: 0;
   visibility: hidden;
   
+}
+.jawor-links-window
+{
+  background-color: #d9d9d9;
+  height: 40vw;
+  width: 50vw;
+  position: fixed;
+  top: 10%;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+#JaworlinkCloseButton
+{
+  top: 2vw;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  left: 45vw;
+  font-size: 3vw;
+  color: #3b378c;
 }
