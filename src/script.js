@@ -9,13 +9,15 @@ const zsip = document.getElementById("zsip-link");
 const jawor = document.getElementById("jawor-link");
 const bolkow = document.getElementById("bolkow-link");
 const jawor_close = document.getElementById("JaworlinkCloseButton");
-const bolkow_close = document.getElementById("BolkowlinkCloseButton")
+const contact_window = document.getElementById("contact-window");
+
+const bolkow_close = document.getElementById("BolkowlinkCloseButton");
+
 contact_button.addEventListener("click", function (event) {
   event.preventDefault();
   contact_form.style.opacity = "1";
   contact_form.style.visibility = "visible";
   contact_form.style.transition = "0.4s";
-  window.scrollBy(0, 350);
 });
 
 cancel_button.addEventListener("click", function (event) {

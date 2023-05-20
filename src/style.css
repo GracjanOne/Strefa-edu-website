@@ -23,7 +23,8 @@ html {
 }
 body {
   margin: 0;
-  
+  background-size: cover;
+  background-position: center center;
 }
 #logo {
   width: 53%;
@@ -103,11 +104,10 @@ nav {
 
 #section-container {
   position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-#section-container img {
-  height: 97%;
-  width: 97%;
-}
+
 #middle-container {
   display: grid;
   grid-template-columns: 19% 81%;
@@ -150,12 +150,13 @@ nav {
   height: 40vw;
   width: 50vw;
   position: absolute;
-  top: 30%;
+  top: 10%;
   border-radius: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: fixed;
 }
 
 .contact-inputs {
@@ -229,28 +230,24 @@ nav {
   text-align: center;
   z-index: 1000;
 }
-.links-window-container
-{
+.links-window-container {
   display: flex;
   justify-content: center;
 }
-.fb-link a img
-{
+.fb-link a img {
   position: absolute;
   left: -2vw;
   width: 30vw;
   top: 10vw;
   border-radius: 35px;
 }
-#links-title
-{
+#links-title {
   position: absolute;
   top: 2.5vw;
   font-size: 3vw;
   color: #3b378c;
 }
-#website
-{
+#website {
   position: absolute;
   left: 27vw;
   width: 20.5vw;
@@ -268,14 +265,11 @@ nav {
   font-size: 3vw;
   color: #3b378c;
 }
-.links-window
-{
+.links-window {
   opacity: 0;
   visibility: hidden;
-  
 }
-.jawor-links-window
-{
+.jawor-links-window {
   background-color: #d9d9d9;
   height: 40vw;
   width: 50vw;
@@ -290,8 +284,7 @@ nav {
   opacity: 0;
   visibility: hidden;
 }
-#JaworlinkCloseButton
-{
+#JaworlinkCloseButton {
   top: 2vw;
   border: none;
   background: none;
@@ -301,8 +294,7 @@ nav {
   font-size: 3vw;
   color: #3b378c;
 }
-.bolkow-links-window
-{
+.bolkow-links-window {
   background-color: #d9d9d9;
   height: 40vw;
   width: 50vw;
@@ -317,8 +309,7 @@ nav {
   opacity: 0;
   visibility: hidden;
 }
-#BolkowlinkCloseButton
-{
+#BolkowlinkCloseButton {
   top: 2vw;
   border: none;
   background: none;
@@ -328,24 +319,22 @@ nav {
   font-size: 3vw;
   color: #3b378c;
 }
-.aside-link:hover
-{
+.aside-link:hover {
   opacity: 1;
 }
-.aside-link
-{
+.aside-link {
   opacity: 0.8;
 }
 aside {
   position: sticky;
   top: 0vw;
-  
+
   height: 100vh;
   overflow: auto;
 }
 aside::-webkit-scrollbar {
   width: 0.5em; /* szerokość paska przewijania */
-  background-color: #F5F5F5; /* kolor tła paska przewijania */
+  background-color: #f5f5f5; /* kolor tła paska przewijania */
   height: 30vw;
 }
 
@@ -355,4 +344,166 @@ aside::-webkit-scrollbar-thumb {
 
 aside::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* kolor paska przewijania po najechaniu na niego kursorem */
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+/* div images */
+#strefa-szkoly {
+  background-image: url(../images/strefa-szkoły.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.smaller-text {
+  font-size: 4vw;
+}
+#strefa-sportu {
+  background-image: url(../images/strefa-sportu.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-roznosci {
+  background-image: url(../images/strefa-różności.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-nauki {
+  background-image: url(../images/strefa-nauki.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-osobowosci {
+  background-image: url(../images/strefa-osobowosci.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-techniczna {
+  background-image: url(../images/strefa-techniczna.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-podstawowa {
+  background-image: url(../images/strefa-podstawowa.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-miasta {
+  background-image: url(../images/strefa-miasta.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-kultury {
+  background-image: url(../images/strefa-kultury.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strefa-rozrywki {
+  background-image: url(../images/strefa-rozrywki.png);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-container div {
+  margin: 2vw;
+  margin-left: 3.5vw;
+  margin-bottom: 4vw;
+  opacity: 0.9;
+}
+#section-container div:hover {
+  opacity: 1;
 }
