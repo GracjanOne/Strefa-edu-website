@@ -102,12 +102,6 @@ nav {
   position: relative;
 }
 
-#section-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
 #middle-container {
   display: grid;
   grid-template-columns: 19% 81%;
@@ -367,7 +361,6 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .smaller-text {
   font-size: 4vw;
@@ -498,12 +491,29 @@ a:visited {
   justify-content: center;
   align-items: center;
 }
-#section-container div {
-  margin: 2vw;
-  margin-left: 3.5vw;
-  margin-bottom: 4vw;
-  opacity: 0.9;
+
+#our-team {
+  width: 40vw;
+  float: right;
+  overflow: auto;
+  margin-left: 1vw;
+  margin-right: 2vw;
 }
-#section-container div:hover {
-  opacity: 1;
+.wrap-text {
+  text-align: justify;
+  font-family: "Myriad Pro Regular";
+  margin: 2vw;
+  font-size: 1.2vw;
+}
+
+.about-us-headers
+{
+  margin-left: 2vw;
+  font-size: 2vw;
+  background-color: #3b378c;
+  display: inline;
+  border-radius: 35px;
+  padding: 0.9vw;
+  color: white;
+  font-family: "Myriad Pro Condensed";
 }

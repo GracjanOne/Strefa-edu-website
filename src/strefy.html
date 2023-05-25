@@ -11,6 +11,20 @@
       aside {
         margin-top: 11vw;
       }
+      #section-container div {
+        margin: 2vw;
+        margin-left: 3.5vw;
+        margin-bottom: 4vw;
+        opacity: 0.9;
+      }
+      #section-container div:hover {
+        opacity: 1;
+      }
+      #section-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
     </style>
   </head>
   <body>
@@ -26,7 +40,7 @@
           <li><a href="index.html">STRONA GŁÓWNA</a></li>
           <li><a href="strefy.html">STREFY</a></li>
           <li>AKTUALNOŚCI</li>
-          <li>O NAS</li>
+          <li><a href="o-nas.html">O NAS</a></li>
           <li><a id="contact-button" href="">KONTAKT</a></li>
         </ul>
       </nav>
@@ -212,9 +226,9 @@
             </div>
           </a>
           <a href="">
-              <div id="strefa-podstawowa">
-                STREFA <span class="smaller-text">PODSTAWOWA</span>
-              </div>
+            <div id="strefa-podstawowa">
+              STREFA <span class="smaller-text">PODSTAWOWA</span>
+            </div>
           </a>
           <a href="">
             <div id="strefa-miasta">
