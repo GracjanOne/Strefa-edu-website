@@ -116,6 +116,12 @@ nav {
   color: white;
   font-size: 2vw;
 }
+#footer-container
+{
+  position: absolute;
+  width: 100%;
+  
+}
 #contact-information {
   font-family: "Myriad Pro Regular";
   font-size: 1vw;
@@ -142,7 +148,7 @@ nav {
 .contact-window {
   background-color: #d9d9d9;
   height: 40vw;
-  width: 50vw;
+  width: 52vw;
   position: absolute;
   top: 10%;
   border-radius: 48px;
@@ -321,9 +327,9 @@ nav {
 }
 aside {
   position: sticky;
-  top: 0vw;
+  top: 0;
 
-  height: 100vh;
+  height: auto;
   overflow: auto;
 }
 aside::-webkit-scrollbar {
