@@ -498,13 +498,13 @@ a:visited {
   align-items: center;
 }
 
-#our-team {
+.wrap-image {
   width: 40vw;
   float: right;
   overflow: auto;
   margin-left: 1vw;
   margin-right: 2vw;
-  margin-bottom: 1vw;
+  margin-bottom: 0.5vw;
 }
 .wrap-text {
   text-align: justify;
@@ -512,8 +512,13 @@ a:visited {
   margin: 2vw;
   font-size: 1.2vw;
 }
-
-.about-us-headers {
+.source
+{
+  float: right;
+  margin-right: 2vw;
+  
+}
+.title-headers {
   margin-left: 2vw;
   font-size: 2vw;
   background-color: #3b378c;
