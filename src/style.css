@@ -47,7 +47,7 @@ body {
   list-style: none;
   display: flex;
   color: white;
-  font-family: "Myriad Pro Bold Condensed";
+  font-family: "Myriad Pro Bold Condensed", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1vw;
 }
 
