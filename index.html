@@ -7,36 +7,37 @@
     <title>Strefa.edu - Strona główna</title>
     <link rel="stylesheet" href="src/style.css" />
     <script src="src/script.js" async></script>
-    <link rel="preload" as="font" href="/fonts/MYRIADPRO-BOLDCOND.woff" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/fonts/MYRIADPRO-REGULAR.woff" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/fonts/MYRIADPRO-COND.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
     <style>
-   
-      #section-container img
-      {
+      #section-container img {
         margin-left: 3vw;
         width: 71vw;
       }
-     
     </style>
-      
-    
   </head>
   <body>
     <div id="upper-container">
       <nav>
-        <img
-          id="logo"
-          src="images/strefa_edu_logo.png"
-          alt="Logo strefa edu"
-        />
+        <img id="logo" src="images/strefa_edu_logo.png" alt="Logo strefa edu" />
+        <img id="zsip-logo" src="images/logo_ZSiP.png" alt="Logo zsip bolków">
         <div id="line"></div>
         <ul id="navbar">
           <li><a href="index.html">STRONA GŁÓWNA</a></li>
           <li><a href="/src/strefy.html">STREFY</a></li>
           <li><a href="/src/aktualnosci.html">AKTUALNOŚCI</a></li>
           <li><a href="src/o-nas.html">O NAS</a></li>
-          <li><a id="contact-button" href="">KONTAKT</a></li>
+          <li><a id="contact-button" class="pointer">KONTAKT</a></li>
         </ul>
       </nav>
       <header>
@@ -66,7 +67,7 @@
             />
             <br />
             <input
-              type="text"
+              type="email"
               class="contact-inputs"
               id="email-holder"
               required
@@ -153,7 +154,7 @@
           <div id="aside-links">
             <ul>
               <li>
-                <a id="zsip-link" href="">
+                <a id="zsip-link" class="pointer">
                   <img
                     class="aside-link"
                     src="images/ZSIP_aside_photo.png"
@@ -162,20 +163,16 @@
                 </a>
               </li>
               <li class="aside-link">
-                <a id="jawor-link" href="">
+                <a id="jawor-link" class="pointer">
                   <img
-                  
                     src="images/powiat_jaworski_aside.jpg"
                     alt="Powiat Jaworski link"
                   />
                 </a>
               </li>
               <li class="aside-link">
-                <a id="bolkow-link"href="">
-                  <img
-                    src="images/bolkow-aside.png"
-                    alt="Miasto Bolków link"
-                  />
+                <a id="bolkow-link" class="pointer">
+                  <img src="images/bolkow-aside.png" alt="Miasto Bolków link" />
                 </a>
               </li>
               <li class="aside-link">
@@ -187,7 +184,9 @@
                 </a>
               </li>
               <li class="aside-link">
-                <a href=""><img src="images/librus_aside.jpg" alt="librus link" /></a>
+                <a href="https://portal.librus.pl/rodzina"
+                  ><img src="images/librus_aside.jpg" alt="librus link"
+                /></a>
               </li>
             </ul>
           </div>

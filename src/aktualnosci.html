@@ -6,14 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strefa.edu - Strona główna</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preload" as="font" href="/fonts/MYRIADPRO-BOLDCOND.woff" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/fonts/MYRIADPRO-REGULAR.woff" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/fonts/MYRIADPRO-COND.woff" type="font/woff" crossorigin="anonymous">
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/MYRIADPRO-BOLDCOND.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/MYRIADPRO-REGULAR.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/MYRIADPRO-COND.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
     <script src="script.js" async></script>
 
     <style>
       aside {
         margin-top: 7vw;
+      }
+      @media (max-width: 700px) {
+        body {
+          width: 180%;
+        }
+        #footer {
+          width: 180%;
+        }
+        iframe {
+          margin-left: 30vw;
+        }
+        aside {
+          margin-top: 15vw;
+        }
       }
     </style>
   </head>
@@ -31,7 +63,7 @@
           <li><a href="strefy.html">STREFY</a></li>
           <li><a href="aktualnosci.html">AKTUALNOŚCI</a></li>
           <li><a href="o-nas.html">O NAS</a></li>
-          <li><a id="contact-button" href="">KONTAKT</a></li>
+          <li><a id="contact-button" class="pointer">KONTAKT</a></li>
         </ul>
       </nav>
       <header>
@@ -180,7 +212,7 @@
                 </a>
               </li>
               <li class="aside-link">
-                <a href=""
+                <a href="https://portal.librus.pl/rodzina"
                   ><img src="../images/librus_aside.jpg" alt="librus link"
                 /></a>
               </li>
@@ -250,5 +282,6 @@
         <div id="copyright">Copyright © Gracjan Zalewski</div>
       </div>
     </footer>
+    <script src="bad-resolution.js" async></script>
   </body>
 </html>
