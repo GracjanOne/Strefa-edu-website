@@ -60,3 +60,14 @@ bolkow_close.addEventListener("click", function (event) {
   bolkow_link_window.style.visibility = "hidden";
 });
 
+let width = window.innerWidth;
+let aside = document.querySelector("aside");
+let middleContainer = document.querySelector("#middle-container");
+let responisveAside = aside;
+let aboutTitle = document.querySelector("#aside-title");
+if(width<=481){
+  middleContainer.append(aboutTitle);
+  aside.style.display = "none";
+  middleContainer.append(responisveAside);
+  responisveAside.style.display = "block";
+}

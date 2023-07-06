@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strefa.edu - Strona główna</title>
+    <link rel="stylesheet" href="src/mobile-style.css" media="screen and (min-with: 0px) and (max-width:481px)">
     <link rel="stylesheet" href="src/style.css" />
     <script src="src/script.js" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,8 +36,8 @@
         <div id="line"></div>
         <ul id="navbar">
           <li><a href="index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="/src/strefy.html">STREFY</a></li>
-          <li><a href="/src/aktualnosci.html">AKTUALNOŚCI</a></li>
+          <li><a href="src/strefy.html">STREFY</a></li>
+          <li><a href="src/aktualnosci.html">AKTUALNOŚCI</a></li>
           <li><a href="src/o-nas.html">O NAS</a></li>
           <li><a id="contact-button" class="pointer">KONTAKT</a></li>
         </ul>
@@ -148,15 +150,16 @@
         <span id="links-title">GDZIE CHCESZ SIĘ UDAĆ?</span>
       </div>
     </div>
+    <div class="title-headers" id="aside-title">Sprawdź również</div>
     <div id="middle-container">
       <aside>
         <div id="aside-container">
           <div id="aside-links">
             <ul>
-              <li>
+              <li class="aside-link">
                 <a id="zsip-link" class="pointer">
                   <img
-                    class="aside-link"
+                    
                     src="images/ZSIP_aside_photo.png"
                     alt="ZSIP Bolków link"
                   />
@@ -192,6 +195,7 @@
           </div>
         </div>
       </aside>
+      
       <section>
         <div id="section-container">
           <img
@@ -200,6 +204,7 @@
           />
         </div>
       </section>
+      
     </div>
     <footer>
       <div id="footer-container">

@@ -1,30 +1,30 @@
 @font-face {
-  font-family: 'Myriad Pro Bold Condensed';
-  src: url('MyriadPro-BoldCond.eot');
-  src: url('MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),
-  url('MyriadPro-BoldCond.woff') format('woff'),
-  url('MyriadPro-BoldCond.ttf') format('truetype');
+  font-family: "Myriad Pro Bold Condensed";
+  src: url("MyriadPro-BoldCond.eot");
+  src: url("MyriadPro-BoldCond.eot?#iefix") format("embedded-opentype"),
+    url("MyriadPro-BoldCond.woff") format("woff"),
+    url("MyriadPro-BoldCond.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  }
-  @font-face {
-    font-family: 'Myriad Pro Condensed';
-    src: url('MyriadPro-Cond.eot');
-    src: url('MyriadPro-Cond.eot?#iefix') format('embedded-opentype'),
-    url('MyriadPro-Cond.woff') format('woff'),
-    url('MyriadPro-Cond.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
-    @font-face {
-      font-family: 'Myriad Pro Regular';
-      src: url('MyriadPro-Regular.eot');
-      src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-      url('MyriadPro-Regular.woff') format('woff'),
-      url('MyriadPro-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-      }
+}
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  src: url("MyriadPro-Cond.eot");
+  src: url("MyriadPro-Cond.eot?#iefix") format("embedded-opentype"),
+    url("MyriadPro-Cond.woff") format("woff"),
+    url("MyriadPro-Cond.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("MyriadPro-Regular.eot");
+  src: url("MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("MyriadPro-Regular.woff") format("woff"),
+    url("MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 font-family: 'PT Sans', sans-serif;
 font-family: 'PT Sans Caption', sans-serif;
@@ -32,6 +32,7 @@ font-family: 'PT Sans Caption', sans-serif;
 html {
   font-size: 20px;
   font-family: "Myriad Pro Bold Condensed";
+  background-color: white;
 }
 body {
   margin: 0;
@@ -42,8 +43,7 @@ body {
   width: 53%;
   margin-left: 2%;
 }
-#zsip-logo
-{
+#zsip-logo {
   position: absolute;
   width: 9vw;
   right: 7.4%;
@@ -123,6 +123,7 @@ nav {
   display: grid;
   grid-template-columns: 19% 81%;
 }
+
 #footer {
   width: 100%;
   height: 100%;
@@ -133,11 +134,9 @@ nav {
   color: white;
   font-size: 2vw;
 }
-#footer-container
-{
+#footer-container {
   position: absolute;
   width: 100%;
-  
 }
 #contact-information {
   font-family: "Myriad Pro Regular";
@@ -152,8 +151,7 @@ nav {
   padding-bottom: 0.5%;
   font-size: 1vw;
 }
-.pointer:hover
-{
+.pointer:hover {
   cursor: pointer;
 }
 #contact-window-container {
@@ -533,11 +531,10 @@ a:visited {
   margin: 2vw;
   font-size: 1.2vw;
 }
-.source
-{
+.source {
   float: right;
   margin-right: 2vw;
-  
+  font-size: 1vw;
 }
 .title-headers {
   margin-left: 2vw;
@@ -548,6 +545,9 @@ a:visited {
   padding: 0.9vw;
   color: white;
   font-family: "Myriad Pro Condensed";
+}
+#aside-title{
+  display: none;
 }
 #section-container-news {
   margin-left: 8vw;
@@ -583,28 +583,68 @@ a:visited {
     margin-left: 6vw;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   #section-container-news {
     margin-left: 2vw;
   }
- 
-  .contact-window{
+
+  .contact-window {
     border-radius: 30px;
     width: 55vw;
     height: 40vw;
   }
-  .contact-inputs{
+  .contact-inputs {
     border-radius: 15px;
   }
- 
 }
-@media (max-width: 530px) {
-  .contact-window{
-    height: 45vw;
+@media (max-width: 481px) {
+  html {
+    margin-top: 20px;
+    overflow-x: hidden;
   }
+  #navbar {
+    display: none;
   }
-  @media (max-width: 600px) {
-  aside {
-    margin-left: -6vw;
+  #zsip-logo {
+    display: none;
   }
+  #header-container h1 {
+    margin-top: -15vw;
   }
+
+  #section-container img {
+    margin-top: 5vw;
+    width: 95%;
+    margin-bottom: 70vw;
+  }
+  #middle-container {
+    display: block;
+  }
+  #header-container h1 {
+    font-size: 6vw;
+    margin-bottom: -2vw;
+    margin-top: -16vw;
+  }
+  #header-container h2 {
+    font-size: 4vw;
+    margin-bottom: 0;
+  }
+  #aside-title{
+    display: inline;
+  }
+  aside{
+    margin-top: -130vw;
+    display: block;
+    width: 300%;
+    overflow-x: scroll;
+    margin-bottom: -30vw;
+    margin-left:-10vw;
+  }
+  .aside-link,
+  .aside-links ul li {
+    width: 13%;
+    display: inline;
+    float: left;
+  }
+  
+}
