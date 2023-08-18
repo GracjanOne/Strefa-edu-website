@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strefa.edu - Strona główna</title>
-    <link rel="stylesheet" href="src/mobile-style.css" media="screen and (min-with: 0px) and (max-width:481px)">
     <link rel="stylesheet" href="src/style.css" />
     <script src="src/script.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -29,19 +28,27 @@
     </style>
   </head>
   <body>
-    <div id="upper-container">
+    
       <nav>
         <img id="logo" src="images/strefa_edu_logo.png" alt="Logo strefa edu" />
         <img id="zsip-logo" src="images/logo_ZSiP.png" alt="Logo zsip bolków">
+        <div id="burger-container"><img src="images/burger-menu.png" alt="" id="burger-menu"></div>
         <div id="line"></div>
-        <ul id="navbar">
-          <li><a href="index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="src/strefy.html">STREFY</a></li>
-          <li><a href="src/aktualnosci.html">AKTUALNOŚCI</a></li>
-          <li><a href="src/o-nas.html">O NAS</a></li>
-          <li><a id="contact-button" class="pointer">KONTAKT</a></li>
-        </ul>
+        
+          <div id="navbar-container">
+            
+            <ul id="navbar">
+              <button id="close-button">x</button>
+              <li class="target-site"><a href="index.html">STRONA GŁÓWNA</a></li>
+              <li><a href="src/strefy.html">STREFY</a></li>
+              <li><a href="src/aktualnosci.html">AKTUALNOŚCI</a></li>
+              <li><a href="src/o-nas.html">O NAS</a></li>
+              <li><a id="contact-button" class="pointer">KONTAKT</a></li>
+            </ul>
+          </div>
+        
       </nav>
+      <div id="upper-container"></div>
       <header>
         <div id="header-container">
           <h1>NAJNOWSZE WYDANIE GAZETY</h1>
@@ -150,7 +157,7 @@
         <span id="links-title">GDZIE CHCESZ SIĘ UDAĆ?</span>
       </div>
     </div>
-    <div class="title-headers" id="aside-title">Sprawdź również</div>
+    
     <div id="middle-container">
       
       
@@ -162,6 +169,9 @@
           />
         </div>
       </section>
+      <div id="title-header-container">
+        <div class="title-headers" id="aside-title">Sprawdź również</div>
+      </div>
       <aside>
         <div id="aside-container">
           <div id="aside-links">

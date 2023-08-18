@@ -115,7 +115,6 @@ nav {
 }
 #aside-links ul li img {
   width: 70%;
-  
 }
 
 #middle-container {
@@ -283,6 +282,17 @@ nav {
   left: 45vw;
   font-size: 3vw;
   color: #3b378c;
+}
+#close-button{
+  display: none;
+  top: 2vw;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  left: 45vw;
+  font-size: 3vw;
+  color: white;
 }
 .links-window {
   opacity: 0;
@@ -536,7 +546,7 @@ a:visited {
   margin-right: 2vw;
   font-size: 1vw;
 }
-#section-container img{
+#section-container img {
   margin-left: -3%;
 }
 .title-headers {
@@ -549,8 +559,14 @@ a:visited {
   color: white;
   font-family: "Myriad Pro Condensed";
 }
-#aside-title{
+#burger-menu{
   display: none;
+}
+#aside-title {
+  display: none;
+  width: 50%;
+  text-align: center;
+  font-size: 1rem;
 }
 #section-container-news {
   margin-left: 8vw;
@@ -563,17 +579,17 @@ a:visited {
   margin-right: 5vw;
 }
 
-@media screen and (max-width: 1557px) and (min-width: 769px){
+@media screen and (max-width: 1557px) and (min-width: 769px) {
   #section-container-news {
     margin-left: 22vw;
   }
 }
-@media screen and (max-width: 1290px) and (min-width: 769px){
+@media screen and (max-width: 1290px) and (min-width: 769px) {
   #section-container-news {
     margin-left: 17vw;
   }
 }
-@media screen and (max-width: 960px) and (min-width: 769px){
+@media screen and (max-width: 960px) and (min-width: 769px) {
   #section-container-news {
     margin-left: 11vw;
   }
@@ -581,39 +597,115 @@ a:visited {
     margin-left: -3vw;
   }
 }
-@media screen and (max-width: 800px) and (min-width: 769px){
+@media screen and (max-width: 800px) and (min-width: 769px) {
   #section-container-news {
     margin-left: 6vw;
   }
 }
-@media screen and (max-width: 768px){
-  #middle-container{
+@media screen and (max-width: 768px) {
+  #middle-container {
     flex-direction: column;
   }
-  .aside-link{
+  .aside-link {
     width: 300px;
-    
   }
-  #aside-links ul li img{
+  #aside-links ul li img {
     width: 80%;
   }
-  #aside-links ul li{
+  #aside-links ul li {
     margin-top: 0;
   }
-  #aside-links ul{
+  #aside-links ul {
     display: flex;
+  }
+  .aside-link img {
+    height: 88%;
+  }
+  #section-container {
+    display: flex;
+    justify-content: center;
+  }
+  #section-container img {
+    width: 100% !important;
+    margin-left: 5%;
+  }
+  #aside-title {
+    display: block;
+  }
+  #line {
+    display: none;
+  }
+  #navbar {
+    
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 9999;
+    margin: 0;
+    border-radius: 10px 0px 0px 10px;
     
   }
-  .aside-link img{
-    height: 88% ;
+  #navbar li{
+    font-size: 1.3rem;
+    margin-left: 10%;
   }
-  #section-container{
+  #navbar-container{
+    display: none; /*Daj w JS flexa*/
+    justify-content: flex-end;
+  }
+  #navbar::before{
+    content: "MENU";
+    color: white;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     
   }
-  #section-container img{
-    width: 95%;
-    margin-left: 5%;
+  nav{
+    height: 100%;
+  }
+  #header-container{
+    margin-top: -15%;
+    margin-bottom: 6%;
+  }
+  #close-button{
+    display: block;
+  }
+  #burger-menu{
+    display:block ;
+    width: 70%;
+    z-index: 999999;
+    cursor: pointer;
+  }
+  #burger-container{
+    display: block;
+    top: 1%;
+    right: 0;
+    position: absolute;
+  }
+  #zsip-logo{
+    display: none;
+  }
+  #title-header-container{
+    display: flex;
+    justify-content: center;
+  }
+  /*Current site mark*/
+  .target-site{
+    border-right: 5px solid #12A540;
+  }
+  .target-site a{
+    color: #12A540;
+  }
+  
+}
+@media screen and (max-width: 440px){
+  #burger-menu{
+    width: 40%;
+  }
+  #burger-container{
+    right: -5%;
   }
 }

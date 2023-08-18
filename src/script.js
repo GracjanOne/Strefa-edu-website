@@ -15,7 +15,9 @@ const jawor_close = document.getElementById("JaworlinkCloseButton");
 const contact_window = document.getElementById("contact-window");
 
 const bolkow_close = document.getElementById("BolkowlinkCloseButton");
-
+const burger = document.getElementById("burger-menu");
+const nav = document.querySelector("#navbar-container");
+const navClose = document.querySelector("#close-button");
 contact_button.addEventListener("click", function (event) {
   event.preventDefault();
   contact_form.style.opacity = "1";
@@ -59,13 +61,21 @@ bolkow_close.addEventListener("click", function (event) {
   bolkow_link_window.style.opacity = "0";
   bolkow_link_window.style.visibility = "hidden";
 });
-
+burger.addEventListener("click", function (e) {
+  e.preventDefault;
+  console.log("aaaa");
+  nav.style.display = "flex";
+});
+navClose.addEventListener("click", (event) => {
+  event.preventDefault;
+  nav.style.display = "none";
+});
 let width = window.innerWidth;
 let aside = document.querySelector("aside");
 let middleContainer = document.querySelector("#middle-container");
 let responisveAside = aside;
 let aboutTitle = document.querySelector("#aside-title");
-if(width<=481){
+if (width <= 481) {
   middleContainer.append(aboutTitle);
   aside.style.display = "none";
   middleContainer.append(responisveAside);
