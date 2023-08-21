@@ -63,7 +63,6 @@ bolkow_close.addEventListener("click", function (event) {
 });
 burger.addEventListener("click", function (e) {
   e.preventDefault;
-  console.log("aaaa");
   nav.style.display = "flex";
 });
 navClose.addEventListener("click", (event) => {

@@ -568,6 +568,9 @@ a:visited {
   text-align: center;
   font-size: 1rem;
 }
+#phone-view{
+  display: none;
+}
 #section-container-news {
   margin-left: 8vw;
   margin-top: 3vw;
@@ -603,6 +606,15 @@ a:visited {
   }
 }
 @media screen and (max-width: 768px) {
+  #header-container h1, #header-container h2{
+    font-size: 1.2rem;
+  }
+  #footer{
+    font-size: 1rem;
+  }
+  #footer span{
+    font-size: 0.5rem;
+  }
   #middle-container {
     flex-direction: column;
   }
@@ -631,9 +643,17 @@ a:visited {
   }
   #aside-title {
     display: block;
+    font-size: 1.5rem;
   }
   #line {
     display: none;
+  }
+  #computer-view{
+    display: none;
+  }
+  #phone-view{
+    display: block;
+    margin-top: -4%;
   }
   #navbar {
     
@@ -641,7 +661,7 @@ a:visited {
     position: fixed;
     top: 0;
     width: 50%;
-    height: 100%;
+    height: 50%;
     z-index: 9999;
     margin: 0;
     border-radius: 10px 0px 0px 10px;
