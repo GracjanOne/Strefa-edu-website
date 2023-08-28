@@ -167,11 +167,12 @@ nav {
 
 .contact-window {
   background-color: #d9d9d9;
-  height: 40vw;
+  padding: 2% 0;
+  height: auto;
   width: 52vw;
   position: absolute;
   top: 10%;
-  border-radius: 48px;
+  border-radius: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +186,7 @@ nav {
   margin: 1vw;
   margin-left: 2vw;
   margin-right: 2vw;
-  border-radius: 30px;
+  border-radius: 2vw;
   padding: 1vw;
   border: solid black 1px;
 }
@@ -623,7 +624,7 @@ a:visited {
   }
 }
 @media screen and (max-width: 768px) {
- 
+  
   .source{
     font-size: 1vw;
   }
@@ -760,7 +761,9 @@ a:visited {
   #wrap-container img {
     width: 95% !important;
   }
-
+  .contact-inputs{
+    width: 43vw;
+  }
 }
 @media screen and (max-width: 440px) and (min-width: 307px) {
   #burger-menu {

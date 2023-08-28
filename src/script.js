@@ -1,6 +1,9 @@
 /** ToDo
  * Responsywność aktualności
  * Dokończyć responsywność strefy szkoły
+ * Powiększyć fonty tytułów stref
+ * Powiekszyć source w strefach
+ * 
  */
 /** Bugs
  * Czasami aside-title jest po lewej stronie zamiast po środku
