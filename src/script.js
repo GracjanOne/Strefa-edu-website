@@ -1,3 +1,12 @@
+/** ToDo
+ * Responsywność aktualności
+ * Dokończyć responsywność strefy szkoły
+ */
+/** Bugs
+ * Czasami aside-title jest po lewej stronie zamiast po środku
+ */
+
+
 const contact_button = document.getElementById("contact-button");
 const contact_form = document.getElementById("contact-window-container");
 const cancel_button = document.getElementById("closeButton");
@@ -23,6 +32,7 @@ contact_button.addEventListener("click", function (event) {
   contact_form.style.opacity = "1";
   contact_form.style.visibility = "visible";
   contact_form.style.transition = "0.4s";
+  nav.style.display = "none"
 });
 
 cancel_button.addEventListener("click", function (event) {
@@ -80,3 +90,5 @@ if (width <= 481) {
   middleContainer.append(responisveAside);
   responisveAside.style.display = "block";
 }
+
+

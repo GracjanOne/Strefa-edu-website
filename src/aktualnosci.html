@@ -34,44 +34,36 @@
       aside {
         margin-top: 7vw;
       }
-      @media (max-width: 700px) {
-        body {
-          width: 180%;
-        }
-        #footer {
-          width: 180%;
-        }
-        iframe {
-          margin-left: 30vw;
-        }
-        aside {
-          margin-top: 15vw;
-        }
-      }
+     
     </style>
   </head>
   <body>
-    <div id="upper-container">
-      <nav>
-        <img
-          id="logo"
-          src="../images/strefa_edu_logo.png"
-          alt="Logo strefa edu"
-        />
-        <div id="line"></div>
+    <nav>
+    <img id="logo" src="../images/strefa_edu_logo.png" alt="Logo strefa edu" />
+    <img id="zsip-logo" src="../images/logo_ZSiP.png" alt="Logo zsip bolków">
+    <div id="burger-container"><img src="../images/burger-menu.png" alt="" id="burger-menu"></div>
+    <div id="line"></div>
+    
+      <div id="navbar-container">
+        
         <ul id="navbar">
-          <li><a href="../index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="strefy.html">STREFY</a></li>
+          <button id="close-button">x</button>
+          <li ><a href="../index.html">STRONA GŁÓWNA</a></li>
+          <li class="target-site"><a href="strefy.html">STREFY</a></li>
           <li><a href="aktualnosci.html">AKTUALNOŚCI</a></li>
-          <li><a href="o-nas.html">O NAS</a></li>
+          <li><a href="../about-us.html">O NAS</a></li>
           <li><a id="contact-button" class="pointer">KONTAKT</a></li>
         </ul>
-      </nav>
-      <header>
-        <div id="header-container">
-          <h1>AKTUALNOŚCI</h1>
-        </div>
-      </header>
+      </div>
+    
+  </nav>
+  <header>
+    <div id="header-container">
+      <h1 id="articles-header">AKTUALNOŚCI</h1>
+    </div>
+  </header>
+    <div id="upper-container">
+      
       <div id="contact-window-container">
         <div class="contact-window">
           <form id="form">
@@ -175,21 +167,73 @@
       </div>
     </div>
     <div id="middle-container">
+      
+      <section>
+        <div id="section-container-news">
+          <iframe
+            class="iframes"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02JJ2tVw6nxRv9KCictk1HrBHrCQbaiNoVKjszeWoY5AwyjYb21E8jhU7apY4Gtgzpl%26id%3D100057203150445&show_text=true&width=500"
+            style="border: none; overflow: scroll"
+            width="500"
+            height="742"
+            scrolling="auto"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            class="iframes"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02mXsCiVTSuvtjBoHgEFQTmhWKFEnogFQrgmjrkQsAr4LRZXWQWaU5L5A92JqL4vkgl%26id%3D100057203150445&show_text=true&width=500"
+            width="500"
+            height="742"
+            style="border: none; overflow: hidden"
+            scrolling="auto"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            class="iframes"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0jseqwASAT5x4MiYTjontDRQDSJFiZQGGjCgea5hWUM2QDCt98UqJNJwty4fi7iW3l%26id%3D100057203150445&show_text=true&width=500"
+            width="500"
+            height="665"
+            style="border: none; overflow: hidden"
+            scrolling="auto"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            class="iframes"
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02ewXExBmaXisHX3YoQeYutx743HAaXzTsWmtqacuTF3dDBLse3wmDGYBLXMKC7UqWl%26id%3D100057203150445&show_text=true&width=500"
+            width="500"
+            height="742"
+            style="border: none; overflow: hidden"
+            scrolling="auto"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </section>
+      <div id="title-header-container">
+        <div class="title-headers" id="aside-title">Sprawdź również</div>
+      </div>
       <aside>
         <div id="aside-container">
           <div id="aside-links">
             <ul>
-              <li>
-                <a id="zsip-link" href="">
+              <li class="aside-link">
+                <a id="zsip-link" class="pointer">
                   <img
-                    class="aside-link"
+                    
                     src="../images/ZSIP_aside_photo.png"
                     alt="ZSIP Bolków link"
                   />
                 </a>
               </li>
               <li class="aside-link">
-                <a id="jawor-link" href="">
+                <a id="jawor-link" class="pointer">
                   <img
                     src="../images/powiat_jaworski_aside.jpg"
                     alt="Powiat Jaworski link"
@@ -197,11 +241,8 @@
                 </a>
               </li>
               <li class="aside-link">
-                <a id="bolkow-link" href="">
-                  <img
-                    src="../images/bolkow-aside.png"
-                    alt="Miasto Bolków link"
-                  />
+                <a id="bolkow-link" class="pointer">
+                  <img src="../images/bolkow-aside.png" alt="Miasto Bolków link" />
                 </a>
               </li>
               <li class="aside-link">
@@ -221,55 +262,8 @@
           </div>
         </div>
       </aside>
-      <section>
-        <div id="section-container-news">
-          <iframe
-            class="iframes"
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02JJ2tVw6nxRv9KCictk1HrBHrCQbaiNoVKjszeWoY5AwyjYb21E8jhU7apY4Gtgzpl%26id%3D100057203150445&show_text=true&width=500"
-            style="border: none; overflow: hidden"
-            width="500"
-            height="742"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-          <iframe
-            class="iframes"
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02mXsCiVTSuvtjBoHgEFQTmhWKFEnogFQrgmjrkQsAr4LRZXWQWaU5L5A92JqL4vkgl%26id%3D100057203150445&show_text=true&width=500"
-            width="500"
-            height="742"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-          <iframe
-            class="iframes"
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0jseqwASAT5x4MiYTjontDRQDSJFiZQGGjCgea5hWUM2QDCt98UqJNJwty4fi7iW3l%26id%3D100057203150445&show_text=true&width=500"
-            width="500"
-            height="665"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-          <iframe
-            class="iframes"
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02ewXExBmaXisHX3YoQeYutx743HAaXzTsWmtqacuTF3dDBLse3wmDGYBLXMKC7UqWl%26id%3D100057203150445&show_text=true&width=500"
-            width="500"
-            height="742"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-        </div>
-      </section>
     </div>
+    
     <footer>
       <div id="footer-container">
         <div id="footer">
@@ -283,6 +277,5 @@
         <div id="copyright">Copyright © Gracjan Zalewski</div>
       </div>
     </footer>
-    <script src="bad-resolution.js" async></script>
   </body>
 </html>

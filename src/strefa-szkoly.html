@@ -4,46 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strefa.edu - Strefa szkoły</title>
+    <title>Strefa.edu - Strefy</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script src="script.js" async></script>
-
     <style>
       aside {
-        margin-top: 7vw;
+        margin-top: 11vw;
+        height: 100vh;
+        width: 250%;
       }
-     article
-     {
-      margin-top: 4vw;
-      width: 91%;
-      margin-left: 2vw;
-     }
-     
+      
     </style>
   </head>
   <body>
-    <div id="upper-container">
-      <nav>
-        <img
-          id="logo"
-          src="../images/strefa_edu_logo.png"
-          alt="Logo strefa edu"
-        />
-        <div id="line"></div>
+    <nav>
+    <img id="logo" src="../images/strefa_edu_logo.png" alt="Logo strefa edu" />
+    <img id="zsip-logo" src="../images/logo_ZSiP.png" alt="Logo zsip bolków">
+    <div id="burger-container"><img src="../images/burger-menu.png" alt="" id="burger-menu"></div>
+    <div id="line"></div>
+    
+      <div id="navbar-container">
+        
         <ul id="navbar">
-          <li><a href="../index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="strefy.html">STREFY</a></li>
+          <button id="close-button">x</button>
+          <li ><a href="../index.html">STRONA GŁÓWNA</a></li>
+          <li class="target-site"><a href="strefy.html">STREFY</a></li>
           <li><a href="aktualnosci.html">AKTUALNOŚCI</a></li>
-          <li><a href="o-nas.html">O NAS</a></li>
+          <li><a href="../about-us.html">O NAS</a></li>
           <li><a id="contact-button" class="pointer">KONTAKT</a></li>
         </ul>
-      </nav>
-      <header>
-        <div id="header-container">
-          <h1>STREFA SZKOŁY</h1>
-        </div>
-      </header>
+      </div>
+    
+  </nav>
+  <header>
+    <div id="header-container">
+      <h1 id="articles-header">STREFA SZKOŁY</h1>
+    </div>
+  </header>
+    <div id="upper-container">
+      
       <div id="contact-window-container">
         <div class="contact-window">
           <form id="form">
@@ -147,58 +147,13 @@
       </div>
     </div>
     <div id="middle-container">
-      <aside>
-        <div id="aside-container">
-          <div id="aside-links">
-            <ul>
-              <li>
-                <a id="zsip-link" class="pointer">
-                  <img
-                    class="aside-link"
-                    src="../images/ZSIP_aside_photo.png"
-                    alt="ZSIP Bolków link"
-                  />
-                </a>
-              </li>
-              <li class="aside-link">
-                <a id="jawor-link" class="pointer">
-                  <img
-                    src="../images/powiat_jaworski_aside.jpg"
-                    alt="Powiat Jaworski link"
-                  />
-                </a>
-              </li>
-              <li class="aside-link">
-                <a id="bolkow-link" class="pointer">
-                  <img
-                    src="../images/bolkow-aside.png"
-                    alt="Miasto Bolków link"
-                  />
-                </a>
-              </li>
-              <li class="aside-link">
-                <a href="https://www.dlaucznia.pl">
-                  <img
-                    src="../images/nowa-era-aside.jpg"
-                    alt="nowa era dla ucznia link"
-                  />
-                </a>
-              </li>
-              <li class="aside-link">
-                <a href="https://portal.librus.pl/rodzina"
-                  ><img src="../images/librus_aside.jpg" alt="librus link"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </aside>
+      
       <section>
         <div id="articles-container">
           <article>
             <h2 class="title-headers">MATURĘ - czas zacząć</h2>
-            <span class="source">Fot. Łukasz Cynalewski / Agencja Wyborcza.pl</span>
-            <img class="wrap-image" src="../images/matura-zdjęcie-poglądowe.jpeg" alt="Zdjęcie poglądowe matury">
+            
+            <img class="wrap-image" src="../images/matura-zdjęcie-poglądowe.jpeg" alt="Zdjęcie poglądowe matury"> <span class="source">Fot. Łukasz Cynalewski / Agencja Wyborcza.pl</span>
             
             <p class="wrap-text">Matura jest dla wielu uczniów jednym z najważniejszych egzaminów w życiu. Wielu osobom kojarzy 
               się ona z kwitnącymi kasztanowcami. Za 
@@ -243,9 +198,117 @@
               ze swoich sukcesów.</p>
               
           </article>
+          <article>
+            <h2 class="title-headers">SZKOŁĘ - czas zakończyć</h2>
+            <span class="source"></span>
+            <img class="wrap-image" src="../images/odejście-maturzystów.jpg" alt="Zdjęcie odejście maturzystów">
+            
+            <p class="wrap-text">Uczniowie z niecierpliwością czekają na ten dzień. Mowa tutaj 
+              o zakończeniu roku szkolnego i rozpoczęciu wakacji. Maturzyści 
+              z Zespołu Szkół i Placówek im. Witosa w Bolkowie znacznie wcześniej 
+              kończą szkołęi mają jeszcze chwilę, aby przygotować się do najważniejszego egzaminu w ich życiu. Formalnie Zakończenie Roku szkolnego dla 
+              Maturzystów przypada na 28 kwietnia 2023 r. i określane jest jako Zakończenie zajęć w klasach programowo najwyższych w szkołach ponadpodstawowych. Zawsze ten dzień przypada na ostatni piątek kwietnia.
+              Dla absolwentów naszej szkoły zakończył się pewien etap w życiu IV klasy 
+              technikum po Gimnazjum, została jeszcze tylko matura do napisania. Po 
+              zakończeniu będą mieli kilka dni na odpoczynek lub powtórkę materiału przed egzaminem dojrzałości, który rozpocznie się już w środę 4 maja 
+              językiem polskim. W poniedziałek uczniowie napiszą maturę z matematyki, a w piątek z podstawowego angielskiego. Ostatni maturalny egzamin 
+              uczniowie napiszą 23 maja. Po tym wydarzeniu przyszli absolwenci będą 
+              mogli udać się na swoje najdłuższe wakacje w dotychczasowym życiu. 
+              Mimo tego życzymy połamania pióra z tej okazji. A także bądźcie dumni 
+              ze swoich sukcesów.</p>
+              
+          </article>
+          <article>
+            <h2 class="title-headers">SZKOŁĘ - czas zakończyć</h2>
+            <span class="source"></span>
+            <img class="wrap-image" src="../images/odejście-maturzystów.jpg" alt="Zdjęcie odejście maturzystów">
+            
+            <p class="wrap-text">Uczniowie z niecierpliwością czekają na ten dzień. Mowa tutaj 
+              o zakończeniu roku szkolnego i rozpoczęciu wakacji. Maturzyści 
+              z Zespołu Szkół i Placówek im. Witosa w Bolkowie znacznie wcześniej 
+              kończą szkołęi mają jeszcze chwilę, aby przygotować się do najważniejszego egzaminu w ich życiu. Formalnie Zakończenie Roku szkolnego dla 
+              Maturzystów przypada na 28 kwietnia 2023 r. i określane jest jako Zakończenie zajęć w klasach programowo najwyższych w szkołach ponadpodstawowych. Zawsze ten dzień przypada na ostatni piątek kwietnia.
+              Dla absolwentów naszej szkoły zakończył się pewien etap w życiu IV klasy 
+              technikum po Gimnazjum, została jeszcze tylko matura do napisania. Po 
+              zakończeniu będą mieli kilka dni na odpoczynek lub powtórkę materiału przed egzaminem dojrzałości, który rozpocznie się już w środę 4 maja 
+              językiem polskim. W poniedziałek uczniowie napiszą maturę z matematyki, a w piątek z podstawowego angielskiego. Ostatni maturalny egzamin 
+              uczniowie napiszą 23 maja. Po tym wydarzeniu przyszli absolwenci będą 
+              mogli udać się na swoje najdłuższe wakacje w dotychczasowym życiu. 
+              Mimo tego życzymy połamania pióra z tej okazji. A także bądźcie dumni 
+              ze swoich sukcesów.</p>
+              
+          </article>
+          <article>
+            <h2 class="title-headers">SZKOŁĘ - czas zakończyć</h2>
+            <span class="source"></span>
+            <img class="wrap-image" src="../images/odejście-maturzystów.jpg" alt="Zdjęcie odejście maturzystów">
+            
+            <p class="wrap-text">Uczniowie z niecierpliwością czekają na ten dzień. Mowa tutaj 
+              o zakończeniu roku szkolnego i rozpoczęciu wakacji. Maturzyści 
+              z Zespołu Szkół i Placówek im. Witosa w Bolkowie znacznie wcześniej 
+              kończą szkołęi mają jeszcze chwilę, aby przygotować się do najważniejszego egzaminu w ich życiu. Formalnie Zakończenie Roku szkolnego dla 
+              Maturzystów przypada na 28 kwietnia 2023 r. i określane jest jako Zakończenie zajęć w klasach programowo najwyższych w szkołach ponadpodstawowych. Zawsze ten dzień przypada na ostatni piątek kwietnia.
+              Dla absolwentów naszej szkoły zakończył się pewien etap w życiu IV klasy 
+              technikum po Gimnazjum, została jeszcze tylko matura do napisania. Po 
+              zakończeniu będą mieli kilka dni na odpoczynek lub powtórkę materiału przed egzaminem dojrzałości, który rozpocznie się już w środę 4 maja 
+              językiem polskim. W poniedziałek uczniowie napiszą maturę z matematyki, a w piątek z podstawowego angielskiego. Ostatni maturalny egzamin 
+              uczniowie napiszą 23 maja. Po tym wydarzeniu przyszli absolwenci będą 
+              mogli udać się na swoje najdłuższe wakacje w dotychczasowym życiu. 
+              Mimo tego życzymy połamania pióra z tej okazji. A także bądźcie dumni 
+              ze swoich sukcesów.</p>
+              
+          </article>
         </div>
       </section>
+
+      <div id="title-header-container">
+        <div class="title-headers" id="aside-title">Sprawdź również</div>
+      </div>
+      <aside>
+        <div id="aside-container">
+          <div id="aside-links">
+            <ul>
+              <li class="aside-link">
+                <a id="zsip-link" class="pointer">
+                  <img
+                    
+                    src="../images/ZSIP_aside_photo.png"
+                    alt="ZSIP Bolków link"
+                  />
+                </a>
+              </li>
+              <li class="aside-link">
+                <a id="jawor-link" class="pointer">
+                  <img
+                    src="../images/powiat_jaworski_aside.jpg"
+                    alt="Powiat Jaworski link"
+                  />
+                </a>
+              </li>
+              <li class="aside-link">
+                <a id="bolkow-link" class="pointer">
+                  <img src="../images/bolkow-aside.png" alt="Miasto Bolków link" />
+                </a>
+              </li>
+              <li class="aside-link">
+                <a href="https://www.dlaucznia.pl">
+                  <img
+                    src="../images/nowa-era-aside.jpg"
+                    alt="nowa era dla ucznia link"
+                  />
+                </a>
+              </li>
+              <li class="aside-link">
+                <a href="https://portal.librus.pl/rodzina"
+                  ><img src="../images/librus_aside.jpg" alt="librus link"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
     </div>
+    
     <footer>
       <div id="footer-container">
         <div id="footer">
