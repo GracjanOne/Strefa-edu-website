@@ -1,15 +1,11 @@
 /** ToDo
  * Responsywność aktualności
- * Dokończyć responsywność strefy szkoły
- * Powiększyć fonty tytułów stref
- * Powiekszyć source w strefach
- * 
  */
 /** Bugs
  * Czasami aside-title jest po lewej stronie zamiast po środku
  */
 
-
+let width = window.innerWidth;
 const contact_button = document.getElementById("contact-button");
 const contact_form = document.getElementById("contact-window-container");
 const cancel_button = document.getElementById("closeButton");
@@ -35,7 +31,10 @@ contact_button.addEventListener("click", function (event) {
   contact_form.style.opacity = "1";
   contact_form.style.visibility = "visible";
   contact_form.style.transition = "0.4s";
-  nav.style.display = "none"
+  if(width<768){
+    nav.style.display = "none"
+  }
+  
 });
 
 cancel_button.addEventListener("click", function (event) {
@@ -82,7 +81,7 @@ navClose.addEventListener("click", (event) => {
   event.preventDefault;
   nav.style.display = "none";
 });
-let width = window.innerWidth;
+
 let aside = document.querySelector("aside");
 let middleContainer = document.querySelector("#middle-container");
 let responisveAside = aside;
